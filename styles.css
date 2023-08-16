@@ -1,0 +1,468 @@
+/* GENERAL */
+body{
+    background: linear-gradient(112.9deg, #273E41, #2A3D2F, #644E3A);
+}
+
+button{
+    margin: 0;
+    border: 0;
+    background-color: Transparent;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,p{
+    color: white;
+    font-family: "poppins";
+    letter-spacing: .3rem;
+}
+
+/* MAIN */
+.container{
+    width: 100%;
+    height: 98vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 4;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+.container .content{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    z-index: 99;
+}
+
+/* STATIC */
+.static{
+    color: white;
+    /* position: relative; */
+}
+
+.static h1{
+    font-family: 'Outfit', sans-serif;
+    font-size: 600%;
+    margin: 0;
+    letter-spacing: .2rem;
+   
+}
+
+.static p{
+    font-size: 150%;
+    font-family: 'Signika', sans-serif;
+    margin: -18px 0 0 22px;
+    letter-spacing: 1rem;
+    white-space: nowrap;
+}
+
+.content.static div{
+    width: 80%;
+}
+
+.animation-subtitle-in{
+    opacity: 0;
+    animation: slideIn ease 0.3s forwards;
+}
+
+.animation-subtitle-out{
+    animation: slideOut ease 0.3s forwards;
+}
+
+.animation-content-in{
+    opacity: 0;
+    animation: slideIn ease 0.3s forwards;
+}
+
+.animation-content-out{
+    animation: slideOut ease 0.3s forwards;
+}
+
+.backbutton{
+    position: absolute;
+    left: 3%;
+    bottom: 2%;
+    width: fit-content;
+    width: 6% !important; 
+    height: 10%;
+    border-radius: 10px;
+
+
+}
+
+.btn-animation{
+    width: 100%; 
+    height: 100%;
+    transition: transform .3s;
+    opacity: 0.5;
+    margin: 0 auto;
+
+
+    &:hover{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+}
+
+.btn-animation svg{
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+
+/* ROOM */
+
+.room{
+    position: relative;
+}
+.roomlayout{
+    width: 100%;
+    margin: auto;
+}
+
+.furniture{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    animation: wiggle 3s ease-in infinite;
+
+    &:hover{
+        animation: none;
+        animation: scaling 0.1s ease-in forwards;
+        .text{
+            animation: slideIn ease 0.1s forwards .1s;
+        }}
+}
+
+.furniture button img{
+    width: 100%;
+    margin: 0;
+}
+
+.furniture .text{
+    flex-flow: column;
+    font-family: 'Signika', sans-serif;
+    font-size:60%;
+    color: black;
+    background-color: white;
+    padding: 2px 6px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 0 auto;
+    opacity: 0;
+    letter-spacing: 0;
+}
+
+.aboutme{
+    width: 9.5%;
+    position: absolute;
+    left: 36.6%;
+    top: 32.7%;
+}
+
+.contact{
+    width: 5%;
+    position: absolute;
+    right: 33%;
+    top: 45.6%;
+}
+.skill{
+    width: 11%;
+    position: absolute;
+    right: 13.5%;
+    top: 31.7%;
+    z-index: 5;
+}
+.projects{
+    width: 15%;
+    position: absolute;
+    right: 19%;
+    top: 40%;
+}
+
+.achievement{
+    width: 13%;
+    position: absolute;
+    top: 32.8%;
+    left: 18.3%;
+}
+
+@keyframes wiggle{
+    0%   {    
+        transform: rotate(0deg);
+    }
+    5%{
+        transform: rotate(1.5deg);
+    } 
+    10%   {    
+        transform: rotate(-1.5deg);
+    }
+    15%{
+        transform: rotate(0deg);
+    }
+    100%   {    
+    }
+}
+
+@keyframes scaling{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes slideIn {
+    0% {transform: translateY(-20px);}
+    100% {transform: translateY(0);opacity:1;}
+}
+
+@keyframes slideOut {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(20px);opacity:0;}
+}
+
+@keyframes Gradient {
+    0% {
+    background-position: 0% 50%
+    }
+    50% {
+    background-position: 100% 50%
+    }
+    100% {
+    background-position: 0% 50%
+    }
+}
+
+/* DYNAMIC */
+.dynamic-content{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ABOUT ME */
+
+.dynamic-content p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 200%;
+    font-weight: 100;
+    text-align: justify;
+    margin: auto 0;
+}
+
+/* CONTACT INFO */
+.contact-info{
+    width: 80%;
+    transition: transform .5s;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    opacity: 0.5;
+
+    &:hover{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+.contact-info p{
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 200%;
+    font-weight: 300;
+    text-align: center;
+    margin: auto 0;
+}
+
+.contact-info .logo{
+    height: 100px;
+}
+
+/* SKILL */
+.bar{
+    height: 50%;
+    width: 70%;
+    margin: auto 0;
+    border: solid white 2px;
+    border-radius: 5px;
+}
+.skill-package{
+    display: flex;
+    justify-content: space-between;
+    height: 9%;
+
+}
+
+.skill-package p{
+    margin: auto 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 150%;
+}
+
+.progress{
+    height: 100%;
+    width: 0;
+    background-color: white;
+
+    transition: 2s ease-in-out 0.5s;
+}
+
+/* Achievement */
+.Scrollable-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow-y: scroll
+    
+}
+
+.achievement-card{
+    width: 80%;
+    display: inline-block;
+    text-align: right;
+    font-family: 'Poppins';
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content:right;
+    margin-left: auto;
+    margin-right: 20px;
+    margin: 20px 20px 20px auto;
+}
+
+.card-icon{
+    width: 75px;
+    margin-left:20px ;
+    position: relative;
+}
+.card-content{
+    width: 75%;
+}
+
+.year{
+    font-size: 250%;
+    margin: 13px auto auto auto;
+    font-weight: bold;
+}
+
+.circle{
+    background: white;
+    width: 75px;
+    height:75px;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+.card-content .list{
+    margin: 15px 0;
+}
+
+.title{
+    font-size: 180%;
+    margin: 0;
+    font-weight: 600;
+}
+
+.position{
+    font-size: 100%;
+    margin: 0;
+}
+
+.line{
+    width: 8px;
+    height: 150%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 46%;
+
+}
+
+/* PROJECT */
+.button
+{
+    color: white;
+    height: 7%;
+    display: flex;
+    justify-content:center;
+    animation: none;
+}
+
+.button svg{
+    margin: auto 0;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.project-card img{
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.project-card h1{
+    margin: 0;
+}
+
+.website-button{
+    border: solid white 2px;
+    border-radius: 5px;
+    color: white;
+    font-family: "poppins";
+    font-weight: 300;
+    width: 15%;
+    padding: 5px 15px ;
+    margin: 10px auto;
+    letter-spacing: .2rem;
+    transition: transform .5s;
+    opacity: 0.5;
+
+    &:hover{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container{
+        flex-direction: column;
+    }
+    .container .content.static{
+        width: 100%;
+        height: 20%;
+        text-align: right;
+    }
+    .container .content.dynamic{
+        width: 100%;
+        height: 80%;
+    }
+    .project-card img{
+        width: 100%;
+    }
+    .contact-info{
+        opacity: 1;
+    }
+}
+

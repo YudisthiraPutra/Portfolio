@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.71fd5130.js",
+    "static/media/journ.png": "/portfolio/static/media/journ.e2106321ca78c9b54db1.png",
+    "static/media/omama.png": "/portfolio/static/media/omama.e46baa6eef5350f89897.png",
+    "static/media/room.png": "/portfolio/static/media/room.a6cb1f016f10c730c241.png",
+    "static/media/achievement.PNG": "/portfolio/static/media/achievement.9fe2445b30b02cb7a164.PNG",
+    "static/media/skills.png": "/portfolio/static/media/skills.625712dd8d0f377bef89.png",
+    "static/media/projects.PNG": "/portfolio/static/media/projects.d0d2a00c6cd6616853bd.PNG",
+    "static/media/aboutme.PNG": "/portfolio/static/media/aboutme.8a01c0bbc8a249ad89b4.PNG",
+    "static/media/contact.PNG": "/portfolio/static/media/contact.18c1a7b83789ed231ded.PNG",
+    "index.html": "/portfolio/index.html",
+    "main.71fd5130.js.map": "/portfolio/static/js/main.71fd5130.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.71fd5130.js"
+  ]
+}
